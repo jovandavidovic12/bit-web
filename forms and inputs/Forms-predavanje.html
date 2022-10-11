@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms and inputs</title>
+</head>
+<body>
+    <form action="" method="">
+        <fieldset>
+            <legend>Enter username and password</legend>
+        <p>
+           <label> Username </label> 
+            <input type="text" name="username">
+        </p>
+
+        <p>
+            <label>  Password</label> 
+            <input type="text" name="Password">
+        </p>
+    </fieldset>
+
+    <label for="date">Enter date of birth</label>
+    <input type="date" name="date" id="date">
+    <label for="email">Enter email</label>
+    <input type="email" name="email" id="email" required>
+    <label for="url">Please enter UL</label>
+    <input type="url" name="url" id="url">
+
+    <p>Search</p>
+    <input type="search" name="search" id="search" placeholder="Enter keyword">
+    <button type="button">Search</button>
+
+    
+
+        <p>
+            
+            Add comment : 
+            <br>
+            <textarea name="Comment" id="" cols="5" rows="5"></textarea>
+        </p>
+
+        <p>
+            Please select your favourite genre:
+            <label for="rock">Rock</label>
+           
+            <input type="radio" name="genre" id="" value="rock" checked="checked" id="rock"> Rock
+            <label for="pop">pop</label>
+
+            <input type="radio" name="genre" id="" value="pop"> Pop
+            <label for="jazz">jazz</label>
+
+            <input type="radio" name="genre" id="" value="jazz"> Jazz
+        </p>
+
+        <p>
+            Please select your favourite genre:
+            <input type="checkbox" name="genre" id="" value="rock" checked="checked"> Rock
+            <input type="checkbox" name="genre" id="" value="pop"> Pop
+            <input type="checkbox" name="genre" id="" value="jazz"> Jazz
+        </p>
+
+        <p>
+            Please select your favourite genre:
+            <select name="genre" multiple="multiple">
+            <option value="rock">Rock</option>
+            <option value="pop">pop</option>
+            <option value="jazz">jazz</option>
+        </select>
+        </p>
+
+        <p> Upload your favourite song
+            <br>
+            <input type="file" name="file">
+            <br>
+            <!-- <input type="image" src=download.jpg > -->
+            <button type="submit">
+                <img src="../keyboard-shortcuts-windows.pdf" alt="none">
+            </button>
+
+            <button type="submit"></button>
+        </p>
+      
+
+
+
+       
+
+        
+
+
+    </form>
+</body>
+</html>

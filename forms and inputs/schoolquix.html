@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School quiz</title>
+</head>
+<body>
+    <h1>School quiz</h1>
+    <h3>Please answer following questions:</h3>
+    <br>
+    
+    <form action="">
+        <p>  1. What is the capital of Serbia <em>( Only one correct answer) : </em> 
+            <br> 
+             <input type="radio" name="capital" value="Nis"> 
+             <label for="capital">Nis</label>
+             <input type="radio" name="capital" value="Paracin">
+             <label for="capital">Paracin</label>
+             <input type="radio" name="capital" value="Beograd">
+             <label for="capital">Beograd</label>
+             <input type="radio" name="capital" value="Valjevo"> 
+             <label for="capital">Valjevo</label>
+        </p>
+
+        <p>
+            2. Which of the following mountains are located in Serbia:
+            <br>
+            <input type="checkbox" name="planina" id="planina">
+            <label for="planina">Tara</label>
+            <input type="checkbox" name="zlatibor" id="planina"> 
+            <label for="planina">Zlatibor</label>
+            <input type="checkbox" name="Bjelasnica" id="planina"> 
+            <label for="planina">Bjelasnica</label>
+            <input type="checkbox" name="Volujak" id="planina"> 
+            <label for="planina">Volujak</label>
+        </p>
+
+
+        <p>
+            3.Describe the process of making pancakes:
+            <br>
+            <textarea name="text" id="text" cols="30" rows="10" placeholder="Describe the process"></textarea>
+        </p>
+
+        <h1>Dropdown menu and multiselect</h1>
+
+        <form action="">
+            <p>
+                
+                
+                <p> What instument can you play ? 
+                    <br>
+                <select name="muzicki instrument" >
+                    <option value="gitara">Gitara</option>
+                    <option value="violoncelo">violoncelo</option>
+                    <option value="harmonika">harmonika</option>
+                </select>
+            </p>
+            <p> Select only musical instuments
+                <br>
+                <select name="muzicki instrument" id="mi" multiple="mutiple">
+                    <option value="gitara">gitara</option>
+                    <option value="violoncelo">violoncelo</option>
+                    <option value="lopta">lopta</option>
+                </select>
+            </p>
+
+            <p>Provide your date of birth
+                <br>
+            <input type="date" name="date" id="date">
+        </p>
+        </form>
+
+        
+
+</body>
+</html>
