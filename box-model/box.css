@@ -1,0 +1,78 @@
+.header{
+    width: 960px;
+    height: auto;
+    
+}
+
+
+.header h1{
+    width: inherit;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 60px;
+    background-color: rgb(105, 146, 200);
+    color: rgb(152, 0, 234);
+    font-style:oblique ;
+    -webkit-box-shadow: 38px 33px 54px 18px rgba(35,58,161,0.59);
+    -moz-box-shadow: 38px 33px 54px 18px rgba(35,58,161,0.59);
+    box-shadow: 38px 33px 54px 18px rgba(35,58,161,0.59);
+
+}
+
+.p1{
+    background-color: yellow;
+    max-width: 300px;
+    width: 400px;
+    height: 500px;
+}   
+
+
+.threp{
+    width: auto;
+    height: auto;
+}
+.p2{
+    background-color: red;
+    max-height: 200px;
+    width: 600px;
+    height: 300px;
+    overflow: scroll;
+}
+
+.one {
+    background-color: yellow;
+    width: 400px;
+    border: 5px red dashed;
+    margin-right: 20;
+    padding: 0px;
+    text-align: center;
+    
+}
+   
+
+.two {
+    background-color: yellow;
+    border: 5px green solid;
+    width: 400px;
+    text-align: center;
+    margin-right: 20;
+    padding: 0px;
+    visibility: hidden;
+    
+}
+
+.three {
+    background-color: yellow;
+    border: 5px red dashed;
+    width: 400px;
+    margin-right: 20;
+    padding: 0px;
+    text-align: center;
+}
+
+
+
+
