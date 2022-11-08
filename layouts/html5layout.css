@@ -1,0 +1,127 @@
+*{
+    width: 960px;
+}
+
+header{
+    background-color: rgb(193,57,43);
+    height: 40px;
+}
+nav{
+    text-align: right;
+    padding-top: 8px;  
+    padding-bottom: 4px;  
+    font-size: large;
+    
+}
+
+a{
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+aside {
+    width: 30%;
+    float: right;
+    background-color: yellow;
+    margin-right: 23px;
+  
+}
+
+hr{
+    width: 270px;
+}
+
+aside p {
+    margin-top: 10px;
+    width: fit-content;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.div1{
+    background-color: red;
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+    margin-left: 10px;
+  
+}
+.div2{
+    background-color: #2D3E50;
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+    margin-left: 10px;
+}
+.div3{
+    background-color: orange;
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+    margin-left: 10px;
+
+}
+
+.div4{
+    background-color: green;
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.div5{
+    background-color: red;
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+    margin-right: 10px;
+
+}
+.div6{
+    background-color: #2D3E50;
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+    margin-left: 10px;
+}
+.div7{
+    background-color: orange;
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+    margin-left: 10px;  
+}
+.div8{
+    background-color: green;
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+    margin-left: 10px;  
+
+}
+
+p {
+    width: 300px;
+    display: inline-block;
+    margin-left: 10px;
+
+}
+
+footer{
+    width: 960px;
+    background-color: #2D3E50;
+    height: 40px;
+    
+}
+
+footer span{
+    display: block;
+    color: white;
+    margin-left: 40px;
+    margin-top: 10px;
+    padding-top: 10px;
+}
