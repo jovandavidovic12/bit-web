@@ -1,0 +1,330 @@
+@import'./_mixins';
+@import'./_colors';
+@import'./_fonts';
+@import'./_reset';
+
+//===>>>>Global css<===
+body {
+    font-family: 'Roboto Regular';
+
+    h1,
+    h2,
+    a {
+        font-family: 'Roboto Bold';
+    }
+}
+
+
+.logo-text {
+    font-size: 30px;
+    font-family: 'Roboto Bold';
+    padding: 20px;
+    color: $regular-white;
+
+
+
+    .orange-logo {
+        border: 3px solid $regular-white;
+        border-right: 0px;
+        color: $orange-button;
+        padding: 0px 10px 0px 10px;
+    }
+
+
+}
+
+.navigation-links {
+    .nav-link {
+        text-decoration: none;
+        color: $regular-white;
+        font-size: 12px;
+        letter-spacing: 1px;
+
+    }
+}
+
+.logo-and-nav {
+    @include flex-row-spacearound();
+
+    .nav {
+        padding: 25px 10px 0px 10px
+    }
+
+}
+
+.header-section {
+    background-image: url(/assets/images/banner2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 450px;
+}
+
+.we-shape-title {
+    height: 50%;
+    padding-top: 50px;
+    @include flex-center-column();
+
+    h1 {
+        font-size: 30px;
+        padding: 10px 10px 40px 10px;
+        text-align: center;
+        color: $regular-white;
+        width: 80%;
+    }
+
+    .we-shape-button {
+        padding: 8px 15px 8px 15px;
+        font-size: 12px;
+        letter-spacing: 1px;
+        border-radius: 15px;
+        border-style: none;
+        background-color: $btn-blue;
+        color: $regular-white;
+    }
+}
+
+.tittle {
+    @include flex-center-column;
+
+    .tittle-h2 {
+        padding-top: 20px;
+        font-family: 'Roboto Regular';
+        font-size: 27px;
+    }
+}
+
+.logo {
+    @include flex-center-horiz;
+    margin-top: 5px;
+}
+
+.line {
+    height: 1.5px;
+    background: black;
+    width: 30px;
+    margin: 10px 5px 0px 5px;
+
+}
+
+.square {
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    transform: rotate(45deg);
+    margin-bottom: 30px;
+    border: 2px solid black;
+}
+
+.who-we-are-description {
+    @include flex-row;
+    padding: 0px 30px 0px 30px;
+
+    .description {
+        width: 33%;
+        padding: 0px 10px 0px 10px;
+        text-align: left;
+        line-height: 23px;
+
+        img {
+            width: 100%;
+        }
+
+        h3 {
+            padding-bottom: 20px;
+            color: $common-blue;
+            font-size: 20px;
+        }
+
+        ul {
+            padding-left: 10px;
+        }
+
+        li {
+            list-style: url(../assets/images/arrow_bullet.png);
+            padding-top: 5px;
+            color: $gray;
+        }
+
+        p {
+            padding-bottom: 20px;
+        }
+
+
+    }
+}
+
+.testimonials-wrapper {
+    display: flex;
+    flex: 2;
+    padding: 0px 30px 0px 30px;
+    gap: 20px;
+
+
+
+
+    .testimonial {
+        @include flex-row;
+        flex-wrap: wrap;
+        background-color: $common-blue;
+        padding: 25px;
+
+
+    }
+
+    .info-wrapper {
+        padding: 10px 10px 20px;
+
+    }
+
+    .head-img {
+        width: 60px;
+        border-radius: 50%;
+    }
+
+    img {
+        width: 75px;
+    }
+
+    p {
+        font-size: 13px;
+        padding: 10px 0px 10px 0px;
+        color: $regular-white;
+        line-height: 20px;
+        font-family: 'Roboto Regular';
+    }
+}
+
+.contact-form {
+    @include flex-row;
+    height: 200px;
+
+    p {
+        font-size: 14px;
+    }
+
+    .box {
+        width: 25%;
+        @include flex-center-column;
+        color: $regular-white;
+        padding-bottom: 40px;
+
+        h3 {
+            padding: 10px
+        }
+
+        .phone {
+            @include flex-row;
+
+            img {
+                width: 25px;
+
+
+            }
+
+            p {
+                text-align: center;
+                padding: 5px;
+            }
+
+        }
+    }
+}
+
+
+.contact-form {
+    .contact {
+        background-color: $connect-green;
+    }
+
+    .connect {
+        background-color: $connect-red;
+
+        img {
+            width: 20px;
+            padding: 10px;
+        }
+    }
+
+    .adress {
+        background-color: $connect-blue;
+    }
+
+    .house {
+        background-color: $common-blue;
+        padding: 0;
+
+        img {
+            width: 90%;
+        }
+    }
+}
+
+iframe {
+    width: 100%;
+}
+
+.form {
+    @include flex-row;
+    padding: 0px 60px 0px 60px;
+    justify-content: center;
+
+    .inputs {
+        @include flex-row;
+        gap: 15px;
+        padding-bottom: 20px;
+    }
+
+    input {
+        height: 25px;
+        padding: 5px;
+    }
+
+    textarea {
+        width: 99%;
+
+    }
+}
+.footer{
+    @include flex-column;
+    justify-content: center;
+    height: 70px;
+    background-color: $futer;
+    margin-top: 10px;
+  
+    .footer-nav{
+      @include flex-row;
+      justify-content: center;
+    }
+    a{
+        color: $regular-white;
+        text-decoration: none;
+        font-family: 'Roboto Regular';
+        font-size: 14px;
+    }
+  
+    p{
+      text-align: center;
+      color: $regular-white;
+      font-family: 'Roboto Regular';
+      padding: 10px 0px 0px 10px;
+      font-size: 14px;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .testimonials-wrapper{
+        @include flex-row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .testimonial{
+        @include flex-row;
+        flex-wrap: wrap;
+        width: 35%;
+    }
+
+  }
+  
+
+
+   
