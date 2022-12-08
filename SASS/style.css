@@ -1,0 +1,29 @@
+.PE {
+  position: absolute;
+  top: 50%;
+  transform: translateY(10%);
+}
+
+.phones {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-template-rows: repeat(1, minmax(200px, auto));
+}
+
+.spec {
+  background-color: #456539;
+  height: 300px;
+  width: 300px;
+  margin: 20px;
+  font-size: 25px;
+}
+
+.spec h5 {
+  padding: 10px;
+  color: red;
+}
+.spec p {
+  padding: 10px;
+}
+
+/* SCSS *//*# sourceMappingURL=style.css.map */

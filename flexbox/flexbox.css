@@ -1,0 +1,46 @@
+
+
+.container1{
+    display: flex;
+    width: 500px;
+    height: 500px;
+    order: 2;
+    flex-direction: row;
+    
+}
+
+
+.container2{
+display: flex;
+flex-direction: column;
+order: 1;
+        
+}
+
+.one{
+order: 4;
+background-color: aqua;
+width: 200px;
+height: 33%;
+}
+
+.two{
+ order: 3;
+background-color: bisque;
+width: 200px;
+height: 34%;
+}
+
+.three{
+order:2;
+background-color: black;
+width: 200px;
+height: 33%;
+}
+
+.four{
+ 
+background-color: blueviolet;
+width: 66%;
+height: 100%;
+}

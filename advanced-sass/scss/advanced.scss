@@ -1,0 +1,114 @@
+@import './mixins';
+
+
+
+$basic-color: white;
+
+
+
+
+body {
+
+    .wrapper-img {
+        background-image: url(../assets/spacex-tesmanian_1600x.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: fit-content;
+    }
+
+    header {
+        h1 {
+            padding: 50px 50px 10px 50px;
+            text-align: center;
+            font-size: 70px;
+            font-family: 'Zen Dots', cursive;
+            color: $basic-color
+        }
+    }
+
+    .navigation {
+        padding: 50px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+
+
+        img {
+            width: 350px;
+            padding-bottom: 20px;
+        }
+
+        a {
+            color: $basic-color;
+            @include textdecor;
+            padding: 10px;
+
+            &:link {
+                background-color: rgba(201, 208, 214, 0.068);
+            }
+
+            &:hover {
+                background-color: rgba(201, 208, 214, 0.173);
+            }
+
+            &:visited {
+                background-color: rgba(201, 208, 214, 0.507);
+                ;
+            }
+
+        }
+    }
+
+    .middle-section {
+        @include flex-center-horiz;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 99%;
+        padding-top: 100px 0px 100px 0px;
+
+
+
+
+
+
+        .text {
+            color: white;
+            width: 45%;
+            padding: 30px;
+            font-size: 18px;
+            letter-spacing: 1px;
+            border-radius: 5px;
+            font-family: 'Zen Dots', cursive;
+            line-height: 20px;
+
+
+        &:hover{
+            color: gray;
+        }
+        }
+    }
+
+
+    .navigation-2{
+        @include flex-center-vert;
+        justify-content: space-evenly;
+        background-color: black;
+        height: 100px;
+
+
+
+        img{
+            width: 100px;
+        }
+
+
+        a{
+            @include textdecor;
+           color:  $basic-color;
+        }
+    }
+
+
+}

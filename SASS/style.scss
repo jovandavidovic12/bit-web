@@ -1,0 +1,46 @@
+$bgcolor: #456539;
+$fontSize : 25px;
+
+@mixin vertical-center($jovan) {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY($jovan);
+    -webkit-transform: translateY($jovan);
+    transform: translateY($jovan);
+ }
+
+
+ .PE {@include vertical-center(10%)}
+
+.phones {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-template-rows: repeat(1, minmax(200px, auto));
+}
+
+.spec{
+    background-color: $bgcolor;
+    height: 300px;
+    width:300px;
+    margin: 20px;
+    font-size: $fontSize;
+    
+    
+
+}
+
+
+
+
+.spec {
+    h5 {
+        padding: 10px;
+        color: red;
+    }
+
+    p{
+        padding: 10px;
+    }
+}
+
+/* SCSS */

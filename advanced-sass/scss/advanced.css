@@ -1,0 +1,77 @@
+body .wrapper-img {
+  background-image: url(../assets/spacex-tesmanian_1600x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+body header h1 {
+  padding: 50px 50px 10px 50px;
+  text-align: center;
+  font-size: 70px;
+  font-family: "Zen Dots", cursive;
+  color: white;
+}
+body .navigation {
+  padding: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body .navigation img {
+  width: 350px;
+  padding-bottom: 20px;
+}
+body .navigation a {
+  color: white;
+  text-decoration: none;
+  font-family: "Zen Dots", cursive;
+  padding: 10px;
+}
+body .navigation a:link {
+  background-color: rgba(201, 208, 214, 0.068);
+}
+body .navigation a:hover {
+  background-color: rgba(201, 208, 214, 0.173);
+}
+body .navigation a:visited {
+  background-color: rgba(201, 208, 214, 0.507);
+}
+body .middle-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 99%;
+  padding-top: 100px 0px 100px 0px;
+}
+body .middle-section .text {
+  color: white;
+  width: 45%;
+  padding: 30px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  font-family: "Zen Dots", cursive;
+  line-height: 20px;
+}
+body .middle-section .text:hover {
+  color: gray;
+}
+body .navigation-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: black;
+  height: 100px;
+}
+body .navigation-2 img {
+  width: 100px;
+}
+body .navigation-2 a {
+  text-decoration: none;
+  font-family: "Zen Dots", cursive;
+  color: white;
+}/*# sourceMappingURL=advanced.css.map */
