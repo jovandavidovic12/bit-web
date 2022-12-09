@@ -49,7 +49,9 @@ table {
 
 body {
   font-family: 'Roboto Regular'; }
-  body h1,
+  body h1 {
+    font-family: 'Roboto Regular';
+    font-size: 24px; }
   body h2,
   body a {
     font-family: 'Roboto Bold'; }
@@ -82,7 +84,7 @@ body {
   background-image: url(/assets/images/banner2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 450px; }
+  height: 40rem; }
 
 .we-shape-title {
   height: 50%;
@@ -100,9 +102,9 @@ body {
   .we-shape-title .we-shape-button {
     padding: 8px 15px 8px 15px;
     font-size: 12px;
+    border-style: none;
     letter-spacing: 1px;
     border-radius: 15px;
-    border-style: none;
     background-color: #1c70b1;
     color: #ffffff; }
 
@@ -112,19 +114,18 @@ body {
   justify-content: center;
   flex-direction: column; }
   .tittle .tittle-h2 {
-    padding-top: 20px;
+    padding: 50px 0px 10px 0px;
     font-family: 'Roboto Regular';
     font-size: 27px; }
 
 .logo {
   display: flex;
-  justify-content: center;
-  margin-top: 5px; }
+  justify-content: center; }
 
 .line {
   height: 1.5px;
   background: black;
-  width: 30px;
+  width: 100px;
   margin: 10px 5px 0px 5px; }
 
 .square {
@@ -222,7 +223,7 @@ body {
   background-color: #82C3F5;
   padding: 0; }
   .contact-form .house img {
-    width: 90%; }
+    height: 100%; }
 
 iframe {
   width: 100%; }
@@ -230,30 +231,43 @@ iframe {
 .form {
   display: flex;
   flex-direction: row;
-  padding: 0px 60px 0px 60px;
-  justify-content: center; }
+  padding: 0px 60px 0px 60px; }
   .form .inputs {
     display: flex;
     flex-direction: row;
     gap: 15px;
     padding-bottom: 20px; }
+  .form form {
+    width: 100%;
+    margin-bottom: 60px; }
   .form input {
     height: 25px;
-    padding: 5px; }
+    padding: 5px;
+    width: 33%; }
   .form textarea {
-    width: 99%; }
+    width: 99.9%;
+    padding: 0; }
+  .form .input-btn {
+    padding: 5px 10px 5px 10px;
+    margin-top: 10px;
+    color: #ffffff;
+    background-color: #ff9801;
+    border: none;
+    border-radius: 3px;
+    font-family: 'Roboto Regular'; }
 
 .footer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 70px;
+  justify-content: space-around;
+  height: 100px;
   background-color: #000000;
   margin-top: 10px; }
   .footer .footer-nav {
     display: flex;
     flex-direction: row;
-    justify-content: center; }
+    justify-content: center;
+    padding-top: 20px; }
   .footer a {
     color: #ffffff;
     text-decoration: none;
@@ -263,20 +277,116 @@ iframe {
     text-align: center;
     color: #ffffff;
     font-family: 'Roboto Regular';
-    padding: 10px 0px 0px 10px;
+    padding: 15px 0px 0px 15px;
     font-size: 14px; }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1200px) {
+  .who-we-are-description {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .who-we-are-description .description {
+      width: 40%;
+      padding: 30px;
+      word-break: break-all; }
+    .who-we-are-description .description-3 {
+      width: 100%;
+      word-wrap: wrap; }
+
   .testimonials-wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start; }
+    padding-left: 10%; }
+    .testimonials-wrapper .testimonial-3 {
+      align-self: flex-start; }
 
   .testimonial {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 35%; } }
+    width: 35%; }
+
+  .contact-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .contact-form .box {
+      flex-wrap: wrap;
+      width: 50%;
+      height: 150px; }
+
+  iframe {
+    margin-top: 200px;
+    width: 100%; } }
+@media only screen and (max-width: 768px) {
+  .logo-text {
+    color: #808080; }
+    .logo-text .orange-logo {
+      border: 3px solid #808080;
+      border-right: 0px;
+      color: #ff9801; }
+
+  .header-section {
+    background-image: none; }
+
+  .logo-and-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    .logo-and-nav .nav {
+      width: 80%; }
+      .logo-and-nav .nav .navigation-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #82C3F5;
+        height: 200px; }
+        .logo-and-nav .nav .navigation-links .nav-link {
+          font-size: 20px; }
+
+  .line {
+    width: 30px; }
+
+  .we-shape-title {
+    background-image: url(../assets/images/banner2.jpg);
+    padding: 0px;
+    margin-top: 20px;
+    height: 50%;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .we-shape-title h1 {
+      font-size: 24px; }
+
+  .who-we-are-description {
+    display: flex;
+    flex-direction: column; }
+    .who-we-are-description .description {
+      width: 90%;
+      padding: 10px 0px 10px 0px; }
+
+  .testimonials-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    .testimonials-wrapper .testimonial {
+      width: 80%; }
+    .testimonials-wrapper .testimonial-3 {
+      align-self: center; }
+
+  form .inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 20px;
+    align-content: space-around;
+    flex-wrap: wrap; }
+    form .inputs input {
+      width: 100%; }
+  form textarea {
+    padding-left: 5px; } }
 
 /*# sourceMappingURL=style.css.map */

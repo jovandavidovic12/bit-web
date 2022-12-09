@@ -11,28 +11,28 @@
 
 <body>
 
-    <div class="header-section">
+    <div class="header-section" id="home">
         <div class="logo-and-nav">
         <div class="logo">
             <p class="logo-text"><span class="orange-logo">BUILD</span>ESTATE</p>
         </div>
         <div class="nav">
             <nav class="navigation-links">
-                <a class="nav-link" href="">HOME</a>
-                <a class="nav-link" href="">ABOUT</a>
-                <a class="nav-link" href="">SERVICES</a>
-                <a class="nav-link" href="">CONTACT US</a>
+                <a class="nav-link" href="#home" >HOME</a>
+                <a class="nav-link" href="#about-us">ABOUT</a>
+                <a class="nav-link" href="#services">SERVICES</a>
+                <a class="nav-link" href="#say-hello">CONTACT US</a>
             </nav>
         </div>
     </div>
 
         <div class="we-shape-title">
             <h1>WE SHAPE OUR BUILDING THEREAFTER THEY SHAPE US</h1>
-            <button class="we-shape-button" role="button">Read More</button>
+            <button class="we-shape-button" type="button">Read More</button>
         </div>
     </div>
     <div class="tittle">
-        <h2 class="tittle-h2">Who We Are</h2>
+        <h2 class="tittle-h2" id="about-us">Who We Are</h2>
         <div class="logo">
             <div class="line"></div>
             <div class="square"></div>
@@ -59,8 +59,8 @@
             <img src="./assets/images/about.jpg" alt="about us">
         </div>
 
-        <div class="description">
-            <h3 class="blue-txt">We make your dream home</h3>
+        <div class="description description-3">
+            <h3 class="blue-txt" id="services">We make your dream home</h3>
             <p>
                 "For decades engineers have stood accused that their buildings
                 do not have any cultural value. We have attempted to liberate
@@ -76,7 +76,7 @@
     </div>
 
     <div class="tittle">
-        <h2 class="tittle-h2">Who We Are</h2>
+        <h2 class="tittle-h2">What People Say</h2>
         <div class="logo">
             <div class="line"></div>
             <div class="square"></div>
@@ -84,7 +84,7 @@
         </div>
     </div>
 
-    <div class="testimonials-wrapper">
+    <div class="testimonials-wrapper" id="agents">
         <div class="testimonial">
             <div class="picture-wrapper">
                 <img src="./assets/images/t1.jpg" alt="wiliamson" class="head-img">
@@ -103,10 +103,10 @@
         </div>
         <div class="testimonial">
             <div class="picture-wrapper">
-                <img src="./assets/images/t1.jpg" alt="wiliamson" class="head-img"> 
+                <img src="./assets/images/t2.jpg" alt="wiliamson" class="head-img"> 
             </div>
             <div class="info-wrapper">
-                <h5>WILIAMSON</h5>
+                <h5>JENNIFER LOPEZ</h5>
                 <img src="./assets/images/popular.png" alt="stars">
 
             </div>
@@ -116,12 +116,12 @@
 
 
         </div>
-        <div class="testimonial">
+        <div class="testimonial testimonial-3">
             <div class="picture-wrapper">
-                <img src="./assets/images/t1.jpg" alt="wiliamson" class="head-img">
+                <img src="./assets/images/t3.jpg" alt="wiliamson" class="head-img">
             </div>
             <div class="info-wrapper">
-                <h5>WILIAMSON</h5>
+                <h5>SELENA GOMEZ</h5>
                 <img src="./assets/images/popular.png" alt="stars">
 
             </div>
@@ -143,7 +143,7 @@
     </div>
 
 
-    <div class="contact-form">
+    <div class="contact-form" id="say-hello">
         <div class="box contact">
             <h3>CONTACT US</h3>
             <div class="phone">
@@ -176,12 +176,14 @@
 
     </div>
 
+    
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.305935303!2d-74.25986548248684!3d40.69714941932609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z0IrRg9GY0L7RgNC6LCDQodGY0LXQtNC40ZrQtdC90LUg0JTRgNC20LDQstC1!5e0!3m2!1ssr!2srs!4v1669158089266!5m2!1ssr!2srs"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
 
-    <div class="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.305935303!2d-74.25986548248684!3d40.69714941932609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z0IrRg9GY0L7RgNC6LCDQodGY0LXQtNC40ZrQtdC90LUg0JTRgNC20LDQstC1!5e0!3m2!1ssr!2srs!4v1669158089266!5m2!1ssr!2srs"
-    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+    
+
 
     <div class="tittle">
         <h2 class="tittle-h2">MAIL US</h2>
@@ -202,19 +204,19 @@
 
             <textarea name="Message" id="" cols="30" rows="7" placeholder="Message"></textarea>
 
-            <button type="submit">Submit</button>
+            <button type="submit" class="input-btn">Submit</button>
         </form>
     </div>
 
     <div class="footer">
         <div class="footer-nav">
             <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Stats</a>
-            <a href="#">Agents</a>
-            <a href="#">Testimonials</a>
+            <a href="#home">Home</a>
+            <a href="#about-us">About</a>
+            <a href="#services">Services</a>
+            <a href="#agents">Stats</a>
+            <a href="#agents">Agents</a>
+            <a href="#agents">Testimonials</a>
         </nav>
         </div>
 
