@@ -57,7 +57,7 @@ body {
 }
 
 .header-section {
-    background-image: url(/assets/images/banner2.jpg);
+    background:url(../assets/images/banner2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 40rem;
@@ -262,9 +262,10 @@ body {
     }
 }
 
-iframe {
+iframe{
     width: 100%;
 }
+
 
 .form {
     @include flex-row;
@@ -378,6 +379,7 @@ iframe {
     .contact-form {
         @include flex-row;
         flex-wrap: wrap;
+        height: 100%;
 
 
         .box {
@@ -385,12 +387,17 @@ iframe {
             width: 50%;
             height: 150px;
         }
+        .house{
+            height: 190px;
+            img{
+                height: 100%;
+            }
+        }
 
 
     }
 
     iframe {
-        margin-top: 200px;
         width: 100%;
     }
 
@@ -413,7 +420,7 @@ iframe {
     }
 
     .header-section {
-        background-image: none;
+        background-image:unset;
     }
 
     .logo-and-nav {
