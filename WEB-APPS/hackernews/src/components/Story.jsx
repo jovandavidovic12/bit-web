@@ -3,8 +3,6 @@ import { useState } from "react";
 import { getStory } from "../services/API";
 import {IconContext} from "react-icons";
 import {FaHeart} from "react-icons/fa"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro' ;
 
 
 const Story = ({id})=> {
